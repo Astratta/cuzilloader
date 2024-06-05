@@ -15,5 +15,5 @@ To download a video as a audio file you need ffmpeg, you can get it here https:/
 
 There's also scripts that downloads and sets up ffmpeg:
 
-for Windows: https://github.com/Crozzers/ffmpeg-installer <br />
-for Linux : https://gist.github.com/maxwelleite/bcb4604ef827742b9a38cced04018aff
+for Windows: https://github.com/Crozzers/ffmpeg-installer # Tested <br />
+for Linux: https://gist.github.com/maxwelleite/bcb4604ef827742b9a38cced04018aff # Old script, didnt tested
