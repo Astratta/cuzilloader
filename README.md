@@ -1,12 +1,12 @@
 # Cuzilloader
 Simple script to download videos in mp4/mp3 using ytdlp
 
-Example usage
+#Example usage
 
-## Download video 
+Download video 
 cuzilloader https://www.youtube.com/watch?v=?
 
-## Download audio
+Download audio
 cuzilloader -f mp3 https://www.youtube.com/watch?v=?
 
 Note:
