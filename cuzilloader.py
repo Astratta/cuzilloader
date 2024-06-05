@@ -1,6 +1,5 @@
 import argparse
 from yt_dlp import YoutubeDL
-from time import sleep
 from platform import system
 
 def download_file(url: str, ext: str, home: str) -> None:
@@ -31,7 +30,6 @@ def argparser() -> argparse.Namespace:
         parser.add_argument("-f", "--format", type=str, nargs="?", default="mp4")
     except argparse.ArgumentError as e:
         print(e)
-        sleep(5)
 
     return parser.parse_args()
 
