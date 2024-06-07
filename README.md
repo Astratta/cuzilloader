@@ -4,13 +4,13 @@ Simple script to download videos in mp4/mp3 using ytdlp.
 ## Example usage
 
 Download video in 480p or worse: <br />
-cuzilloader https://www.youtube.com/watch?v=?
+cuzilloader {url}
 
 Download video in the highest possible quality: <br />
-cuzilloader -q best https://www.youtube.com/watch?v=?
+cuzilloader -q best {url}
 
 Download audio: <br />
-cuzilloader -f mp3 https://www.youtube.com/watch?v=?
+cuzilloader -f mp3 {url}
 
 Note: <br />
 To download a video as a audio file you need ffmpeg, you can get it here https://github.com/FFmpeg/FFmpeg
