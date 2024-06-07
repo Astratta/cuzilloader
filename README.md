@@ -1,15 +1,15 @@
 ### Cuzilloader
-Simple script to download videos in mp4/mp3 using ytdlp
+Simple script to download videos in mp4/mp3 using ytdlp.
 
 ## Example usage
 
-Download video in 480p or worse <br />
+Download video in 480p or worse: <br />
 cuzilloader https://www.youtube.com/watch?v=?
 
-Download video in the highest possible quality <br />
+Download video in the highest possible quality: <br />
 cuzilloader -q best https://www.youtube.com/watch?v=?
 
-Download audio <br />
+Download audio: <br />
 cuzilloader -f mp3 https://www.youtube.com/watch?v=?
 
 Note: <br />
