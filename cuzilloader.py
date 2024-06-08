@@ -1,4 +1,6 @@
 import argparse
+import os
+from pathlib import Path
 from yt_dlp import YoutubeDL
 from platform import system
 from urllib.parse import urlparse
@@ -54,26 +56,15 @@ def argparser() -> argparse.Namespace:
     return parser.parse_args()
 
 def set_home(system: str) -> str:
-    import os
-    from pathlib import Path
-
-    if system == "Windows":
-        try:
-            os.chdir(f"{Path.home()}\\Videos\\Cuzilloader\\")
-            return f"{Path.home()}\\Videos\\Cuzilloader\\"
-        except:
-            os.makedirs(f"{Path.home()}\\Videos\\Cuzilloader\\")
-            return f"{Path.home()}\\Videos\\Cuzilloader\\"
-    
     try:
-        os.chdir(f"{Path.home()}/Videos/Cuzilloader/")
-        return f"{Path.home()}/Videos/Cuzilloader/"
+        os.chdir(Path.home() / "Videos" / "Cuzilloader")
     except:
-        os.makedirs(f"{Path.home()}/Videos/Cuzilloader/")
-        return f"{Path.home()}/Videos/Cuzilloader/"
+        os.makedirs(Path.home()/ "Videos"/ "Cuzilloader")
+    finally:
+        return str(Path.home() / "Videos" / "Cuzilloader")
 
 def main():
-    home = set_home(system())
+    home = set_home(system()) + os.sep
     args = argparser()
     download_file(args.url, args.format, home, args.quality)
 
