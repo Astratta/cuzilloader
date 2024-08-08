@@ -57,11 +57,11 @@ def argparser() -> argparse.Namespace:
 
 def set_home(system: str) -> str:
     try:
-        os.chdir(Path.home() / "Videos" / "Cuzilloader")
+        os.chdir(Path.home() / "Documents" / ".cuzilloader")
     except:
-        os.makedirs(Path.home()/ "Videos"/ "Cuzilloader")
+        os.makedirs(Path.home()/ "Documents"/ ".cuzilloader")
     finally:
-        return str(Path.home() / "Videos" / "Cuzilloader")
+        return str(Path.home() / "Documents" / ".cuzilloader")
 
 def main():
     home = set_home(system()) + os.sep
